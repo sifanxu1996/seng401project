@@ -10,21 +10,36 @@ p {
   color: black;
 }
 
-.center {
+img.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
-.profileSection {
+section#worldmap {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+div#uofc_link {
+  height: 10px;
+  width: 10px;
+  background-color: #555;
+  border-radius: 50%;
+  transform: translate(0px, 0px);
+}
+
+section.profileSection {
   color: black;
   margin: 20px;
   padding: 20px;
   border-radius: 20px;
 }
 
-.profilePic {
+img.profilePic {
   float: left;
   width: 20%;
   background-color: purple;
@@ -34,7 +49,7 @@ p {
   border-radius: 10px;
 }
 
-.profileArticle {
+article.profileArticle {
   float: left;
   width: 30%;
   background-color: white;
@@ -44,7 +59,7 @@ p {
   border-radius: 10px;
 }
 
-.profileSection:after {
+section.profileSection:after {
   content: "";
   display: table;
   clear: both;
