@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
+	<head>
+		<title>SENG 401 Software Architecture</title>
+		<link rel="stylesheet" href="css/main.css">
+		<script type="text/javascript" src="javascript/main.js"></script>
+	</head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+	<img class="center" src="images/pic.png" alt="image01" style="width:128px; height:128px;" >
+	<img class="center" src="images/pic.png" alt="image02" style="width:128px; height:128px;" >
+
+	<h1>SENG 401</h1>
+
+	<div class="dropdown">
+	  <button onclick="dropFunction()" class="dropbtn">Dropdown</button>
+	  <div id="myDropdown" class="dropdown-content">
+	    <a href="#">Link 1</a>
+	    <a href="#">Link 2</a>
+	    <a href="#">Link 3</a>
+	  </div>
+	</div>
+
+	<div>
+		<h1>About Us</h1>
+		<section class="profileSection">
+			<img class="profilePic" src="images/pic.png" alt="pic" style="width:64px; height:64px;">
+			<article class="profileArticle">
+				<h2>NAME HERE</h2>
+				<p>This is a paragraph about NAME. He is a good lad.</p>
+			</article>
+			<img class="profilePic" src="images/pic.png" alt="pic" style="width:64px; height:64px;">
+			<article class="profileArticle">
+				<h2>NAME HERE</h2>
+				<p>This is a paragraph about NAME. He is a good lad.</p>
+			</article>
+		</section>
+
+		<section class="profileSection">
+			<img class="profilePic" src="images/pic.png" alt="pic" style="width:64px; height:64px;">
+			<article class="profileArticle">
+				<h2>NAME HERE</h2>
+				<p>This is a paragraph about NAME. He is a good lad.</p>
+			</article>
+			<img class="profilePic" src="images/pic.png" alt="pic" style="width:64px; height:64px;">
+			<article class="profileArticle">
+				<h2>NAME HERE</h2>
+				<p>This is a paragraph about NAME. He is a good lad.</p>
+			</article>
+		</section>
+	</div>
+
+	<div>
+		<h2>HTML Forms</h2>
+		<form action="/action_page.php">
+		  Title:<br>
+		  <input type="text" name="Title">
+		  <br>
+		  Phone:<br>
+		  <input type="tel" name="Phone">
+		  <br>
+		  Email:<br>
+		  <input type="email" name="Email">
+			<br>
+		  Date:<br>
+		  <input type="date" name="Date">
+		  <br>
+			Website:<br>
+		  <input type="text" name="Website">
+		  <br>
+			Message:<br>
+			<textarea rows="4" cols="50" name="comment" form="usrform">
+				Enter text here...
+			</textarea><br><br>
+		  <input type="submit" value="Submit">
+
+		</form>
+
+		<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+	</div>
 
 </body>
 </html>
