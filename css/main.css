@@ -10,6 +10,12 @@ p {
   color: black;
 }
 
+*:not(body):not(div):not(section):not(article):not(form):hover {
+  background-color: yellow;
+  color:black;
+  box-shadow: 5px 10px;
+}
+
 img.center {
   display: block;
   margin-left: auto;
