@@ -17,3 +17,7 @@ window.onclick = function(event) {
     }
   }
 }
+
+function displaySection(sectionName) {
+  document.getElementById("displayName").innerHTML = sectionName;
+}
