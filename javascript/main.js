@@ -21,3 +21,23 @@ window.onclick = function(event) {
 function displaySection(sectionName) {
   document.getElementById("displayName").innerHTML = sectionName;
 }
+
+window.onload = function(){
+	// call any functions you want on page load
+	
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
