@@ -16,18 +16,30 @@ p {
   box-shadow: 5px 10px;
 }
 
+/*
 img.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
+*/
 
-section#mapSection {
+.image1 {
   display: block;
+  position: inherit;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+.image2 {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 1533px;
+  left: 519px;
+  height: 10px;
+  width: 10px;
 }
 
 div#uofc_link {
