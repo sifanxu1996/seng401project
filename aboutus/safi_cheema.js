@@ -1,1 +1,1 @@
-document.writeln("");
+document.write("");

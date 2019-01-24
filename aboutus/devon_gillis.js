@@ -1,4 +1,4 @@
-document.writeln("Devon Gillis 10126480, " 
+document.write("Devon Gillis 10126480, " 
 + "I am a fourth year engineering student and "
 + "am taking this course as it is a requirement of my program. "
 + "I hope to gain an even deeper understanding of web development "
