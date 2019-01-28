@@ -38,8 +38,7 @@ var calgary = {
   latitude: 51.0486,
   longitude: -114.0708,
   population: 1096833,
-  area: 825.29,
-  density: this.population/this.area
+  area: 825.29
 };
 
 var edmonton = {
@@ -47,8 +46,7 @@ var edmonton = {
   latitude: 53.5444,
   longitude: -113.4909,
   population: 960015,
-  area: 684.37,
-  density: population/area
+  area: 684.37
 };
 
 function displayCityInfo(city) {
@@ -58,6 +56,6 @@ function displayCityInfo(city) {
     "Longitude: " + city.longitude + "<br>" +
     "Population: " + city.population + "<br>" +
     "Area: " + city.area + " SqKm <br>" +
-    "Density: " + city.density + " People/SqKm <br>";
-	document.getElementById("cityDisplay").innerHTML = str;
+    "Density: " + ((city.population)/(city.area)).toFixed(2) + " People/SqKm <br>";
+	document.getElementById("displayCity").innerHTML = str;
 }
