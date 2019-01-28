@@ -4,6 +4,15 @@ function dropFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
+function rollover(my_image)
+{
+
+  my_image.style.color = "red";
+
+
+}
+
+
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
