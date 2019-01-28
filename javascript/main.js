@@ -1,3 +1,7 @@
+window.onload = function(){
+	// call any functions you want on page load
+};
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function dropFunction() {
@@ -6,10 +10,7 @@ function dropFunction() {
 
 function rollover(my_image)
 {
-
   my_image.style.color = "red";
-
-
 }
 
 
@@ -31,22 +32,32 @@ function displaySection(sectionName) {
   document.getElementById("displayName").innerHTML = sectionName;
 }
 
-window.onload = function(){
-	// call any functions you want on page load
-	
+// Create an object:
+var calgary = {
+  name: "Calgary",
+  latitude: 51.0486,
+  longitude: -114.0708,
+  population: 1096833,
+  area: 825.29,
+  density: this.population/this.area
 };
 
+var edmonton = {
+  name: "Edmonton",
+  latitude: 53.5444,
+  longitude: -113.4909,
+  population: 960015,
+  area: 684.37,
+  density: population/area
+};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+function displayCityInfo(city) {
+  str =
+    "Name: " + city.name + "<br>" +
+    "Latitude: " + city.latitude + "<br>" +
+    "Longitude: " + city.longitude + "<br>" +
+    "Population: " + city.population + "<br>" +
+    "Area: " + city.area + " SqKm <br>" +
+    "Density: " + city.density + " People/SqKm <br>";
+	document.getElementById("cityDisplay").innerHTML = str;
+}
