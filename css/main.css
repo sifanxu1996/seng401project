@@ -24,6 +24,9 @@ img.center {
   width: 50%;
 }
 */
+#displayName{
+  font-size: 100%;
+}
 
 .image1 {
   display: block;
