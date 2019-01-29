@@ -7,7 +7,7 @@
 	</head>
 <body>
 	<div>
-		<p id="displayName"><br></p>
+		<h1 id="displayName"><br></h1>
 	</div>
 
 	<img class="imageTop" src="images/pic.png" alt="image01" style="width:128px; height:128px;" >
@@ -83,24 +83,25 @@
 					Enter text here...
 				</textarea><br><br>
 			  <input type="submit" value="Submit">
+				<br>
+				<br>
 
 			</form>
 		</section>
 		<A NAME="mapSection">
 
-		<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-
 		<div>
 			<section id="mapSection" onmouseover="displaySection('Map Section')">
 				<img class ="image1" src="images/worldmap.png" width="720px" height="360px" alt="map goes here" usemap="#map">
 				<a href="http://www.calgary.ca/SitePages/cocis/default.aspx">
-		  			<img class="image2" src="images/dot.png" onmouseover="displayCityInfo(calgary)"/>
+		  			<img id="calgaryLocation" src="images/dot.png" onmouseover="displayCityInfo(calgary)"/>
+						<img id="edmontonLocation" src="images/dot.png" onmouseover="displayCityInfo(edmonton)"/>
 				</a>
 			</section>
 		</div>
 
 		<div id=displayCityContainer>
-			<p id="displayCity">Please.</p>
+			<p id="displayCity"></p>
 		</div>
 
 		<div>

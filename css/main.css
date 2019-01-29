@@ -14,19 +14,10 @@ p {
 }
 
 *:not(body):not(div):not(section):not(article):not(form):not(img):hover {
-  background-color: #E4D96F;
+  background-color: #4ddbff;
   color:black;
   box-shadow: 5px 10px;
 }
-
-/*
-img.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-*/
 
 #displayName{
   font-size: 100%;
@@ -39,20 +30,44 @@ img.center {
 
 .image1 {
   display: block;
+  float: left;
   position: inherit;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-.image2 {
+
+#calgaryLocation {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  top: 1533px;
-  left: 519px;
+  top: 1508px;
+  left: 159px;
   height: 10px;
   width: 10px;
 }
+
+#edmontonLocation {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 1497px;
+  left: 160px;
+  height: 10px;
+  width: 10px;
+}
+
+#displayCityContainer{
+  float: left;
+  margin-left: 20px;
+}
+
+#displayCityContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .harold {
   margin-left: auto;
   margin-right: auto;
