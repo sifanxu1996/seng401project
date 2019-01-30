@@ -13,10 +13,10 @@ p {
   color: black;
 }
 
-*:not(html):not(body):not(div):not(section):not(article):not(form):not(img):hover {
+*:not(html):not(body):not(div):not(section):not(article):not(form):not(a):not(img):hover {
   background-color: #4ddbff;
   color:black;
-  box-shadow: 5px 10px;
+  box-shadow: 0px 5px;
 }
 
 #displayName{
