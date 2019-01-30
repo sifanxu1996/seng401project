@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<title>SENG 401 Software Architecture</title>
 		<link rel="stylesheet" href="css/main.css">
 		<script type="text/javascript" src="javascript/main.js"></script>
 	</head>
+
 <body>
 	<div>
 		<h1 id="displayName"><br></h1>
@@ -96,20 +98,26 @@
 			</form>
 		</section>
 		<A NAME="mapSection">
-
+		
 		<div>
 			<section id="mapSection" onmouseover="displaySection('Map Section')">
 				<img class ="image1" src="images/worldmap.png" width="720px" height="360px" alt="map goes here" usemap="#map">
 				<a href="http://www.calgary.ca/SitePages/cocis/default.aspx">
-		  			<img id="calgaryLocation" src="images/dot.png" onmouseover="displayCityInfo(calgary)"/>
-						<img id="edmontonLocation" src="images/dot.png" onmouseover="displayCityInfo(edmonton)"/>
+		  			<img id="calgaryLocation" src="images/dot.png" onmouseover="displayCityInfo(calgary)" onmouseout="removeCityInfo()"/>
 				</a>
+					<img id="edmontonLocation" src="images/dot.png" onmouseover="displayCityInfo(edmonton)"  onmouseout="removeCityInfo()"/>
+
 			</section>
 		</div>
+
 
 		<div id=displayCityContainer>
 			<p id="displayCity"></p>
 		</div>
+
+
+		<!-- This is the div for the image harold. Harold higlights when you hover over him
+			 and also changes the header section to his name -->
 
 		<div>
 			<img class ="harold" src="images/harold.jpg" alt="harold" width = "30%" height = "30%" 

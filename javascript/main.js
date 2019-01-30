@@ -64,3 +64,9 @@ function displayCityInfo(city) {
     "Density: " + ((city.population)/(city.area)).toFixed(2) + " People/SqKm <br>";
 	document.getElementById("displayCity").innerHTML = str;
 }
+
+function removeCityInfo(){
+
+  str = "";
+  document.getElementById("displayCity").innerHTML = str;
+}
