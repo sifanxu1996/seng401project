@@ -10,7 +10,12 @@ function dropFunction() {
 
 function rollover(my_image)
 {
-  my_image.style.color = "red";
+  my_image.style.border = "5px solid red";
+}
+
+function rollout(my_image)
+{
+  my_image.style.border = "0px solid blue";
 }
 
 
