@@ -1,4 +1,34 @@
 
+// Create an object:
+var calgary = {
+  name: "Calgary",
+  latitude: 51.0486,
+  longitude: -114.0708,
+  population: 1096833,
+  area: 825.29
+};
+
+var edmonton = {
+  name: "Edmonton",
+  latitude: 53.5444,
+  longitude: -113.4909,
+  population: 960015,
+  area: 684.37
+};
+
+  str = "Name: " + calgary.name + "<br>" +
+        "Latitude: " + calgary.latitude + "<br>" +
+        "Longitude: " + calgary.longitude + "<br>" +
+        "Population: " + calgary.population + "<br>" +
+        "Area: " + calgary.area + " SqKm <br>" +
+        "Density: " + ((calgary.population)/(calgary.area)).toFixed(2) + " People/SqKm <br>";
+
+  str2 = "Name: " + edmonton.name + "<br>" +
+        "Latitude: " + edmonton.latitude + "<br>" +
+        "Longitude: " + edmonton.longitude + "<br>" +
+        "Population: " + edmonton.population + "<br>" +
+        "Area: " + edmonton.area + " SqKm <br>" +
+        "Density: " + ((edmonton.population)/(edmonton.area)).toFixed(2) + " People/SqKm <br>";
 
 //JQuery Stuff here 
 
@@ -12,17 +42,30 @@ $(document).ready(function(){
     $(this).removeClass('borderClass');
   });
 
-//show city Info for Calgary and Edmonton when location is hovered 
-  var city = calgary;
-  str = "Name: " + city.name + "<br>" +
-        "Latitude: " + city.latitude + "<br>" +
-        "Longitude: " + city.longitude + "<br>" +
-        "Population: " + city.population + "<br>" +
-        "Area: " + city.area + " SqKm <br>" +
-        "Density: " + ((city.population)/(city.area)).toFixed(2) + " People/SqKm <br>";
+//show calgary Info for Calgary and Edmonton when location is hovered 
 
   $("#calgaryLocation").mouseenter(function(){
-    $("#displayCity").setText(str);
+    $("#displayCity").append(str);
+  });
+  $("#calgaryLocation").mouseleave(function(){
+    $("#displayCity").text("");
+  });
+
+  $("#edmontonLocation").mouseenter(function(){
+    $("#displayCity").append(str2);
+  });
+  $("#edmontonLocation").mouseleave(function(){
+    $("#displayCity").text("");
+  });
+
+//when we hover over the area, it's name is displayed on the top
+
+  $(".headerclass").mouseenter(function(){
+    $("#displayName").append($(this).attr('id'));
+  });
+
+  $(".headerclass").mouseleave(function(){
+    $("#displayName").text("");
   });
 });
 
@@ -43,29 +86,14 @@ window.onclick = function(event) {
 }
 
 
-// Create an object:
-var calgary = {
-  name: "Calgary",
-  latitude: 51.0486,
-  longitude: -114.0708,
-  population: 1096833,
-  area: 825.29
-};
 
-var edmonton = {
-  name: "Edmonton",
-  latitude: 53.5444,
-  longitude: -113.4909,
-  population: 960015,
-  area: 684.37
-};
 
 /*
-    "Name: " + city.name + "<br>" +
-    "Latitude: " + city.latitude + "<br>" +
-    "Longitude: " + city.longitude + "<br>" +
-    "Population: " + city.population + "<br>" +
-    "Area: " + city.area + " SqKm <br>" +
-    "Density: " + ((city.population)/(city.area)).toFixed(2) + " People/SqKm <br>";
+    "Name: " + calgary.name + "<br>" +
+    "Latitude: " + calgary.latitude + "<br>" +
+    "Longitude: " + calgary.longitude + "<br>" +
+    "Population: " + calgary.population + "<br>" +
+    "Area: " + calgary.area + " SqKm <br>" +
+    "Density: " + ((calgary.population)/(calgary.area)).toFixed(2) + " People/SqKm <br>";
 
 */
