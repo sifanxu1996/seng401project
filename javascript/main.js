@@ -1,3 +1,13 @@
+
+
+//JQuery Stuff here 
+
+$(document).ready(function(){
+  $("harold").mouseenter(function(){
+    $("harold").css("border", "5px solid red");
+  });
+});
+
 window.onload = function(){
 	// call any functions you want on page load
 };
