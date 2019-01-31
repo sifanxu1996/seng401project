@@ -4,7 +4,8 @@
 	<head>
 		<title>SENG 401 Software Architecture</title>
 		<link rel="stylesheet" href="css/main.css">
-		<script type="text/javascript" src="javascript/main.js; https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="javascript/main.js"></script>
 	</head>
 
 <body>
@@ -28,7 +29,7 @@
 	  </div>
 	</div>
 
-	<div onmouseover="displaySection('Profile Section')">
+	<div>
 		<A NAME="profileSection">
 		<h1>About Us</h1>
 		<section class="profileRow" >
@@ -69,7 +70,7 @@
 
 	<div>
 		<A NAME="formSection">
-		<section id="formSection" onmouseover="displaySection('Form Section')">
+		<section id="formSection">
 			<h2>HTML Forms</h2>
 			<form action="/action_page.php">
 			  Title:<br>
@@ -100,9 +101,9 @@
 		<A NAME="mapSection">
 		
 		<div>
-			<section id="mapSection" onmouseover="displaySection('Map Section')">
+			<section id="mapSection">
 				<img class ="image1" src="images/worldmap.png" width="720px" height="360px" alt="map goes here" usemap="#map">
-				<a href="http://www.calgary.ca/SitePages/cocis/default.aspx"><img id="calgaryLocation" src="images/dot.png" onmouseover="displayCityInfo(calgary)" onmouseout="removeCityInfo()"/></a><img id="edmontonLocation" src="images/dot.png" onmouseover="displayCityInfo(edmonton)"  onmouseout="removeCityInfo()"/>
+				<a href="http://www.calgary.ca/SitePages/cocis/default.aspx"><img id="calgaryLocation" src="images/dot.png" /></a><img id="edmontonLocation" src="images/dot.png" />
 
 			</section>
 		</div>

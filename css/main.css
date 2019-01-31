@@ -158,3 +158,12 @@ section.profileRow::after {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+.borderClass{
+  border-color: red;
+  border-width:5px;
+  border-style: solid;
+  /** OR USE INLINE
+  border: 1px solid #C1E0FF;
+  **/
+}

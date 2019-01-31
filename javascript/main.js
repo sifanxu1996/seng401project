@@ -2,31 +2,30 @@
 
 //JQuery Stuff here 
 
+//add a border to Harold when hovered, remove border from Harold when not hovered 
+
 $(document).ready(function(){
-  $("harold").mouseenter(function(){
-    $("harold").css("border", "5px solid red");
+  $(".harold").mouseenter(function(){
+    $(this).addClass('borderClass');
+  });
+  $(".harold").mouseleave(function(){
+    $(this).removeClass('borderClass');
+  });
+
+//show city Info for Calgary and Edmonton when location is hovered 
+  var city = calgary;
+  str = "Name: " + city.name + "<br>" +
+        "Latitude: " + city.latitude + "<br>" +
+        "Longitude: " + city.longitude + "<br>" +
+        "Population: " + city.population + "<br>" +
+        "Area: " + city.area + " SqKm <br>" +
+        "Density: " + ((city.population)/(city.area)).toFixed(2) + " People/SqKm <br>";
+
+  $("#calgaryLocation").mouseenter(function(){
+    $("#displayCity").setText(str);
   });
 });
 
-window.onload = function(){
-	// call any functions you want on page load
-};
-
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function dropFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function rollover(my_image)
-{
-  my_image.style.border = "5px solid red";
-}
-
-function rollout(my_image)
-{
-  my_image.style.border = "0px solid blue";
-}
 
 
 // Close the dropdown if the user clicks outside of it
@@ -43,9 +42,6 @@ window.onclick = function(event) {
   }
 }
 
-function displaySection(sectionName) {
-  document.getElementById("displayName").innerHTML = sectionName;
-}
 
 // Create an object:
 var calgary = {
@@ -64,19 +60,12 @@ var edmonton = {
   area: 684.37
 };
 
-function displayCityInfo(city) {
-  str =
+/*
     "Name: " + city.name + "<br>" +
     "Latitude: " + city.latitude + "<br>" +
     "Longitude: " + city.longitude + "<br>" +
     "Population: " + city.population + "<br>" +
     "Area: " + city.area + " SqKm <br>" +
     "Density: " + ((city.population)/(city.area)).toFixed(2) + " People/SqKm <br>";
-	document.getElementById("displayCity").innerHTML = str;
-}
 
-function removeCityInfo(){
-
-  str = "";
-  document.getElementById("displayCity").innerHTML = str;
-}
+*/
